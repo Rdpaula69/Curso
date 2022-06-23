@@ -12,5 +12,6 @@ function idade(num1) {
 }
 
 for(let num2 = 1; num2 < 100; num2++){
+    //document.write("<h1>"+idade(num2)+"</h1>")
     console.log(idade(num2))
 }

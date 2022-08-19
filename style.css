@@ -2,30 +2,21 @@
     font-family: 'Inter', sans-serif;
     background: #F3F5FC;
     color: #0A3871;
+    margin: 0;
 }
 
-main {
+main, .entrada, .saida, .alerta, .caixaBotao {
     display: flex;
     justify-content:space-around;
-    align-items: stretch;
-    margin: 0;
-    height: 600px;
-    
-}
-
-.caixaLogo {
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
 }
 
 .entrada, .saida {
-    display: flex;
     flex-direction: column;
-    justify-content:space-around;
 }
 
+.alerta, .caixaBotao {
+    flex-direction: row;
+}
 .saida {
     padding: 15px;
     background: #FFFFFF;

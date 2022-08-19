@@ -1,28 +1,35 @@
 * {
-    margin: 0;
     font-family: 'Inter', sans-serif;
     background: #F3F5FC;
-}
-header, body {
-
+    color: #0A3871;
 }
 
 main {
     display: flex;
-
-}
-.entrada, .saida {
+    justify-content:space-around;
+    align-items: stretch;
+    margin: 0;
+    height: 600px;
     
-    resize: none;
+}
+
+.caixaLogo {
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.entrada, .saida {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
 }
 
 .saida {
-    display: flex;
-    flex-direction: column;
+    padding: 15px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-
-    flex: none;
 }
 

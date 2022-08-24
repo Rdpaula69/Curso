@@ -13,29 +13,28 @@
 <body>
     <main class="main">
         <section class="entrada">
-            <div class="caixaLogo">
+            <div class="logo">
                 <img src="Logo.png" alt="Logo da Alura">
             </div>
-            <textarea name="textoEntrada" id="textoEntrada" cols="70" rows="10" placeholder="Digite seu texto aqui"></textarea>
+            <textarea class="areaTexto" name="textoEntrada" id="textoEntrada"  placeholder="Digite seu texto aqui"></textarea>
             <div class="alerta">
                 <img src="exclamation.png" alt="logo de exclamação">
                 <label for="textoEntrada">Somente letras minúsculas e sem acentos.</label>
             </div>
             <div class="caixaBotao">
-                <button class="botao" name="btnEncriptar" type="button">Encriptar</button>
-                <button class="botao" name="btnDesencriptar" type="button">Desencriptar</button>
+                <button class="botao" name="btnEncriptar" id="btnEncriptar" type="button">Encriptar</button>
+                <button class="botao" name="btnDesencriptar" id="btnDesencriptar" type="button">Desencriptar</button>
             </div>
         </section>
         <section class="saida">
             <div class="aparece">
-                <textarea name="textoSaida" id="textoSaida" cols="50" rows="10"></textarea>
-                <button class="botao" name="btnCopiar" type="button">Copiar</button>
+                <textarea class="areaTexto" name="textoSaida" id="textoSaida"></textarea>
+                <button class="botao" name="btnCopiar" id="btnCopiar" type="button">Copiar</button>
             </div>
             <div class="desaparece">
                 <img src="desenho.svg" alt="Desenho caixa de saída">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <h3>Digite um texto que você deseja criptografar ou descriptografar</h3>
-
             </div>
         </section>
     </main>

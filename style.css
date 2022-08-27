@@ -43,6 +43,21 @@
     background-color: #FFFFFF
 }
 
+.div-desaparece h2, .div-desaparece h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    color: #343A40;
+    background: #FFFFFF;
+}
+
+.div-desaparece h3 {
+    margin: 10px;
+    font-size: 15px;
+
+}
+
 .desenho {
     width: 280px;
     height: 280px;

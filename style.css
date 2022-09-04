@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-.principal, .alerta, #textoEntrada, #textoSaida, .div-aparece, .div-desaparece {
+.principal, .alerta, #textoEntrada, #textoSaida, .div-aparece, .div-desaparece, #btnCopiar {
     position: absolute;
 }
 
@@ -20,27 +20,32 @@
 .div-aparece, .div-desaparece, .div-entrada, .div-saida  {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .div-entrada, .div-saida {
     justify-content: space-between;
-    position: relative;
     margin: 20px;
 }
 
 .div-saida {
     width: 30%;
     padding: 15px;
+    align-items: center;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
 .div-aparece, .div-desaparece {
-    justify-content: center;
+    justify-content: space-around;
     width: 305px;
     height: 540px;
     background-color: #FFFFFF
+}
+
+.div-aparece {
+    justify-content: space-evenly;
 }
 
 .div-desaparece h2, .div-desaparece h3 {
@@ -55,9 +60,11 @@
 .div-desaparece h3 {
     margin: 10px;
     font-size: 15px;
-
 }
 
+.div-desaparece {
+    display: none;
+}
 .desenho {
     width: 280px;
     height: 280px;
@@ -65,7 +72,7 @@
     background-color: #FFFFFF;
 }
 
-#textoEntrada {
+#textoEntrada, #textoSaida {
     top: 20%;
     width: 100%;
     height: 30%;
@@ -89,10 +96,11 @@
 }
 
 .alerta {
-    top: 84%;
+    top: 86%;
 }
 
 .botao {
+    align-self: center;
     width: 280px;
     height: 50px;
     font-size:larger;
@@ -105,4 +113,8 @@
 .botao:hover {
     color: white;
     background: #0A3871;
+}
+
+#btnCopiar {
+    top: 90%;
 }

@@ -38,14 +38,15 @@
 }
 
 .div-aparece, .div-desaparece {
-    justify-content: space-around;
+    position: absolute;
+    justify-content: center;
     width: 305px;
     height: 540px;
     background-color: #FFFFFF
 }
 
 .div-aparece {
-    justify-content: space-evenly;
+    display: none;
 }
 
 .div-desaparece h2, .div-desaparece h3 {
@@ -62,9 +63,6 @@
     font-size: 15px;
 }
 
-.div-desaparece {
-    display: none;
-}
 .desenho {
     width: 280px;
     height: 280px;
@@ -78,7 +76,7 @@
     height: 30%;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .imput-texto {

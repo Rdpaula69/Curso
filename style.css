@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background: #F3F5FC;
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     height: 100%;
     position: relative;
@@ -5,7 +14,7 @@ html, body {
 
 .principal, .div-entrada, .div-saida, .div-botao, .div-aparece, .div-desaparece {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
 }
 
 .div-entrada, .div-saida, .div-aparece, .div-desaparece {
@@ -13,26 +22,32 @@ html, body {
 }
 
 .principal {
-    /* position: relative; */
+    background-color: #F3F5FC;
     width: 100%;
     height: 100%;
     padding: 1rem;
 }
 
 .div-entrada {
-    margin-left: 2rem;
-    width: 50%;
+    width: 60%;
+    padding-left: 7rem;
 }
 
 .div-saida {
+    background: #FFFFFF;
     width: 35%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 1rem;
 }
 
 .logo {
     width: 3rem;
     height: 3rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    position: relative;
+    top: 3%;
+    right: 10%;
+    /* left: 8%; */
 }
 
 .imput-texto {
@@ -54,8 +69,15 @@ html, body {
 }
 
 .alerta {
+    display: flex;
     position: relative;
-    top: 13%;
+    top: 14%;
+    gap: 8px;
+}
+
+.div-botao {
+    position: relative;
+    bottom: 2.4%;
 }
 
 .botao {

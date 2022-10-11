@@ -2,7 +2,6 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    background: #F3F5FC;
     margin: 0;
     padding: 0;
 }
@@ -10,6 +9,21 @@
 html, body {
     height: 100%;
     position: relative;
+    background: #F3F5FC;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top: 3%;
+    right: 10%;
+}
+
+.principal {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
 }
 
 .principal, .div-entrada, .div-saida, .div-botao, .div-aparece, .div-desaparece {
@@ -21,88 +35,79 @@ html, body {
     flex-direction: column;
 }
 
-.principal {
-    background-color: #F3F5FC;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-}
-
 .div-entrada {
     width: 60%;
     padding-left: 7rem;
+    padding-bottom: 1rem;
 }
 
 .div-saida {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     width: 35%;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     padding: 1rem;
-}
+}    
 
-.logo {
-    width: 3rem;
-    height: 3rem;
+.div-aparece, .div-desaparece {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}    
+
+.div-aparece {
+    justify-content: space-between;
+    display: none;
+}        
+
+.alerta {
+    display: flex;
     position: relative;
-    top: 3%;
-    right: 10%;
-    /* left: 8%; */
-}
+    top: 11%;
+    gap: 8px;
+}    
+
+.div-botao {
+    position: relative;
+    justify-content: left;
+    gap: 2rem;
+}                
+
+.botao {
+    width: 16rem;
+    height: 3rem;    
+    font-size:larger;
+    font-weight: bold;
+    color: #0A3871;
+    border-radius: 1.2rem;
+    border: 0.1rem solid #0A3871;
+}        
+
+.botao:hover {
+    color: white;
+    background: #0A3871;
+}    
 
 .imput-texto {
-    height: 10rem;
+    text-align: center;
+    width: 100%;
+    height: 15rem;
     font-size: large;
     text-transform:lowercase;
     resize: none;
     color: #0A3871;
     background: transparent;
     border: none;
-}
+}        
 ::placeholder {
     color: #0A3871;
-}
+}        
 
 .imput-texto:focus {
     border: none;
     outline: none;
-}
-
-.alerta {
-    display: flex;
-    position: relative;
-    top: 14%;
-    gap: 8px;
-}
-
-.div-botao {
-    position: relative;
-    bottom: 2.4%;
-}
-
-.botao {
-    width: 16rem;
-    height: 3rem;
-    font-size:larger;
-    font-weight: bold;
-    color: #0A3871;
-    border-radius: 1.2rem;
-    border: 0.1rem solid #0A3871;
-}
-
-.botao:hover {
-    color: white;
-    background: #0A3871;
-}
-
-.div-aparece, .div-desaparece {
-    align-items: center;
-    height: 100%;
-}
-
-.div-desaparece {
-    display: none;
-}
+}        
 
 /* * {
     box-sizing: border-box;

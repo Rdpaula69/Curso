@@ -12,13 +12,6 @@ html, body {
     background: #F3F5FC;
 }
 
-.logo {
-    width: 3rem;
-    height: 3rem;
-    position: relative;
-    top: 3%;
-    right: 10%;
-}
 
 .principal {
     width: 100%;
@@ -33,64 +26,31 @@ html, body {
 
 .div-entrada, .div-saida, .div-aparece, .div-desaparece {
     flex-direction: column;
-}
+}    
 
 .div-entrada {
     width: 60%;
     padding-left: 7rem;
     padding-bottom: 1rem;
-}
+}    
 
 .div-saida {
     background-color: #FFFFFF;
-    width: 35%;
+    width: 30%;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     padding: 1rem;
-}    
+}
 
-.div-aparece, .div-desaparece {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 100%;
-}    
-
-.div-aparece {
-    justify-content: space-between;
-    display: none;
-}        
-
-.alerta {
-    display: flex;
+.logo {
+    width: 3rem;
+    height: 3rem;
     position: relative;
-    top: 11%;
-    gap: 8px;
-}    
-
-.div-botao {
-    position: relative;
-    justify-content: left;
-    gap: 2rem;
-}                
-
-.botao {
-    width: 16rem;
-    height: 3rem;    
-    font-size:larger;
-    font-weight: bold;
-    color: #0A3871;
-    border-radius: 1.2rem;
-    border: 0.1rem solid #0A3871;
-}        
-
-.botao:hover {
-    color: white;
-    background: #0A3871;
-}    
+    top: 3%;
+    right: 10%;
+}
 
 .imput-texto {
-    text-align: center;
     width: 100%;
     height: 15rem;
     font-size: large;
@@ -109,105 +69,68 @@ html, body {
     outline: none;
 }        
 
-/* * {
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    background: #F3F5FC;
-    margin: 0;
-    padding: 0;
-}
-
-.principal, .alerta, #textoEntrada, #textoSaida, .div-aparece, .div-desaparece {
-    position: absolute;
-}
-
-.principal {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-}
-
-.div-aparece, .div-desaparece, .div-entrada, .div-saida  {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.div-entrada, .div-saida {
-    justify-content: space-between;
-    margin: 20px;
-}
-
-.div-saida {
-    width: 30%;
-    padding: 15px;
-    align-items: center;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-}
-
-.div-aparece, .div-desaparece {
-    position: absolute;
-    justify-content: center;
-    width: 305px;
-    height: 540px;
-    background-color: #FFFFFF
-}
-
-.div-aparece {
-    display: none;
-}
-
-.div-desaparece h2, .div-desaparece h3 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    text-align: center;
-    color: #343A40;
-    background: #FFFFFF;
-}
-
-.div-desaparece h3 {
-    margin: 10px;
-    font-size: 15px;
-}
-
-.desenho {
-    width: 280px;
-    height: 280px;
-    top: 10px;
-    background-color: #FFFFFF;
-}
-
-#textoEntrada, #textoSaida {
-    top: 20%;
-    width: 100%;
-    height: 30%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.imput-texto {
-}
-
 .alerta {
-    top: 86%;
-}
+    display: flex;
+    position: relative;
+    top: 11%;
+    gap: 8px;
+}    
+
+label {
+    color: #495057;
+    opacity: 0.8;
+}    
+
+.div-botao {
+    position: relative;
+    justify-content: left;
+    gap: 2rem;
+}                    
 
 .botao {
-    width: 280px;
-    height: 50px;
+    width: 16rem;
+    height: 3rem;    
     font-size:larger;
     font-weight: bold;
     color: #0A3871;
-    border-radius: 24px;
-    border: 1px solid #0A3871;
-}
+    border-radius: 1.2rem;
+    border: 0.1rem solid #0A3871;
+}            
 
 .botao:hover {
     color: white;
     background: #0A3871;
-} */
+}
+
+.div-aparece, .div-desaparece {
+    text-align: center;
+    align-items: center;
+    height: 100%;
+}        
+
+.div-aparece {
+    justify-content: space-between;
+}            
+
+.div-desaparece{
+    gap: 1rem;
+    justify-content: center;
+}
+
+h2 {
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #495057;
+}
+
+.desenho {
+    width:100%;
+    height: 60%;
+}

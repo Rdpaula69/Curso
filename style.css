@@ -6,7 +6,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     position: relative;
     background: #F3F5FC;
@@ -19,20 +20,28 @@ html, body {
     padding: 1rem;
 }
 
-.principal, .div-entrada, .div-saida, .div-botao, .div-aparece, .div-desaparece {
+.principal,
+.div-entrada,
+.div-saida,
+.div-botao,
+.div-aparece,
+.div-desaparece {
     display: flex;
     justify-content: space-between;
 }
 
-.div-entrada, .div-saida, .div-aparece, .div-desaparece {
+.div-entrada,
+.div-saida,
+.div-aparece,
+.div-desaparece {
     flex-direction: column;
-}    
+}
 
 .div-entrada {
     width: 60%;
     padding-left: 7rem;
     padding-bottom: 1rem;
-}    
+}
 
 .div-saida {
     background-color: #FFFFFF;
@@ -50,71 +59,80 @@ html, body {
     right: 10%;
 }
 
+#textoEntrada {
+    height: 15rem;
+}
+
 .imput-texto {
     width: 100%;
-    height: 15rem;
     font-size: large;
-    text-transform:lowercase;
+    text-transform: lowercase;
     resize: none;
     color: #0A3871;
     background: transparent;
     border: none;
-}        
+}
+
 ::placeholder {
     color: #0A3871;
-}        
+}
 
 .imput-texto:focus {
     border: none;
     outline: none;
-}        
+}
 
 .alerta {
     display: flex;
     position: relative;
     top: 11%;
     gap: 8px;
-}    
+}
 
 label {
     color: #495057;
     opacity: 0.8;
-}    
+}
 
 .div-botao {
     position: relative;
     justify-content: left;
     gap: 2rem;
-}                    
+}
 
 .botao {
     width: 16rem;
-    height: 3rem;    
-    font-size:larger;
+    height: 3rem;
+    font-size: larger;
     font-weight: bold;
     color: #0A3871;
     border-radius: 1.2rem;
     border: 0.1rem solid #0A3871;
-}            
+}
 
 .botao:hover {
     color: white;
     background: #0A3871;
 }
 
-.div-aparece, .div-desaparece {
+.div-aparece,
+.div-desaparece {
     text-align: center;
     align-items: center;
     height: 100%;
-}        
+}
 
 .div-aparece {
     justify-content: space-between;
-}            
+}
 
-.div-desaparece{
+.div-desaparece {
     gap: 1rem;
     justify-content: center;
+}
+
+#textoSaida {
+    height: 80%;
 }
 
 h2 {
@@ -131,6 +149,6 @@ h3 {
 }
 
 .desenho {
-    width:100%;
+    width: 100%;
     height: 60%;
 }

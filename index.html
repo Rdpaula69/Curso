@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Decodificador de Texto</title>
 </head>
+
 <body>
     <main class="principal">
         <section class="div-entrada">
             <div class="logo">
                 <img src="Logo.png" alt="Logo da Alura">
             </div>
-            <textarea class="imput-texto" name="textoEntrada" id="textoEntrada" placeholder="Digite seu texto"></textarea>
-            
+            <textarea class="imput-texto" name="textoEntrada" id="textoEntrada"
+                placeholder="Digite seu texto"></textarea>
+
             <div class="alerta">
                 <img src="exclamation.png" alt="logo de exclamação">
                 <label for="textoEntrada">Somente letras minúsculas e sem acentos.</label>
@@ -28,11 +31,12 @@
         </section>
         <section class="div-saida">
             <div class="div-aparece" data-aparece>
-                <textarea class="imput-texto" name="textoSaida" id="textoSaida" placeholder="Nenhuma mensagem"></textarea>
+                <textarea class="imput-texto" name="textoSaida" id="textoSaida"
+                    placeholder="Nenhuma mensagem"></textarea>
                 <button class="botao" name="btnCopiar" id="btnCopiar" type="button">Copiar</button>
             </div>
             <div class="div-desaparece" data-desaparece>
-                <img class="desenho"  src="desenho.svg" alt="Desenho caixa de saída">
+                <img class="desenho" src="desenho.svg" alt="Desenho caixa de saída">
                 <h2>Nenhuma mensagem encontrada</h2>
                 <h3>Digite um texto que você deseja criptografar ou descriptografar</h3>
             </div>
@@ -40,4 +44,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -25,28 +25,29 @@ function descriptografar(stringAuxDescriptado) {
   return stringAuxDescriptado;
 }
 
-function mostraResultado() {
+function mostraEsconde(status) {
+  if (status) {
     aparece.style.display = 'flex';
     desaparece.style.display = 'none';
-}
-
-function escondeResultado() {
-    aparece.style.display = 'none';
-    desaparece.style.display = 'flex';
+} else {
+  aparece.style.display = 'none';
+  desaparece.style.display = 'flex';
+  }
 }
 
 aparece.style.display = 'none';
+
 btnEncriptar.onclick = (e) => {
     e.preventDefault();
+    if (textoEncriptado = '') {
+      return
+    }
     let textoEncriptado = criptografar(textoEntrada.value);
     textoSaida.value = textoEncriptado;
     textoEntrada.value = '';
-    mostraResultado(); 
+    mostraEsconde(true); 
 }
 
 btnDescriptografar.onclick = (e) => {
     e.preventDefault();
-    escondeResultado();
-    
-
-}
+    escondeResultado();}

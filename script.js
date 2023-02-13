@@ -50,4 +50,4 @@ btnEncriptar.onclick = (e) => {
 
 btnDescriptografar.onclick = (e) => {
     e.preventDefault();
-    escondeResultado();}
+    mostraEsconde(false);}
